@@ -1,0 +1,26 @@
+# Documentación personal
+Memoria_TFG_*.docx
+
+# Pruebas antiguas
+test2.php
+test2.phtml
+web-01/restore_notes.txt
+
+# Archivos comprimidos (se subirán a Releases)
+*.zip
+
+# Configuración privada
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Archivos generados
+.DS_Store
+__pycache__/
+
+# Archivos subidos durante los laboratorios
+web-01/html/uploads/*
+!web-01/html/uploads/.gitkeep

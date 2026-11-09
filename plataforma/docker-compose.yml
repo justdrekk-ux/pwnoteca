@@ -1,0 +1,12 @@
+services:
+  pwnoteca:
+    build: .
+    container_name: pwnoteca-web
+
+    ports:
+      - "127.0.0.1:8090:80"
+
+    volumes:
+      - ./html:/var/www/html
+
+    restart: unless-stopped

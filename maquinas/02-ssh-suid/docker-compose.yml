@@ -1,0 +1,9 @@
+services:
+  ssh-suid:
+    build: .
+    container_name: pwnoteca-02-ssh-suid
+
+    ports:
+      - "127.0.0.1:2222:22"
+
+    restart: unless-stopped

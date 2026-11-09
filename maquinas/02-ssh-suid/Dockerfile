@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 
 RUN useradd -m -s /bin/bash soporte && \
-    echo 'soporte:relicense' | chpasswd
+    echo 'soporte:password123' | chpasswd
 
 
 RUN mkdir -p /etc/ssh/sshd_config.d /run/sshd && \

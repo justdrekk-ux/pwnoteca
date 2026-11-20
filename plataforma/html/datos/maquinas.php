@@ -9,8 +9,10 @@ return [
         'categorias' => ['Web', 'Linux', 'Pivoting'],
         'descripcion' => 'Investiga una infraestructura empresarial, encuentra vulnerabilidades en sus servicios y consigue acceso al sistema.',
         'objetivo' => 'Comprometer la aplicación web, conseguir acceso inicial y avanzar por la infraestructura hasta obtener privilegios elevados.',
-        'estado' => 'En desarrollo',
-        'stack' => 'Apache · PHP · MariaDB · SSH'
+        'estado' => 'Disponible',
+        'stack' => 'Apache · PHP · MariaDB · SSH',
+        'descarga' => 'https://github.com/justdrekk-ux/pwnoteca/releases/download/nexora-v1.0.0/01-nexora-solutions.zip',
+        'walkthrough' => 'https://github.com/justdrekk-ux/pwnoteca/blob/main/walkthroughs/01-nexora-solutions/walkthrough.md',
     ],
 
     'ssh-suid' => [
@@ -19,9 +21,11 @@ return [
         'nivel' => 'easy',
         'categorias' => ['SSH', 'Fuerza bruta', 'Linux'],
         'descripcion' => 'Consigue acceso a un servidor Linux mediante SSH y encuentra una forma de escalar privilegios.',
-        'objetivo' => 'Identificar credenciales débiles, acceder mediante SSH y aprovechar un binario SUID para conseguir privilegios de root.',
-        'estado' => 'En desarrollo',
-        'stack' => 'Ubuntu · OpenSSH · Docker'
+        'objetivo' => 'Contamos con un usuario válido para SSH: "soporte". El objetivo es identificar credenciales débiles, acceder mediante SSH y aprovechar un binario SUID para conseguir privilegios de root.',
+        'estado' => 'Disponible',
+        'stack' => 'Ubuntu · OpenSSH · Docker',
+        'descarga' => 'https://github.com/justdrekk-ux/pwnoteca/releases/download/v0.1.0/02-ssh-suid.zip',
+        'walkthrough' => 'https://github.com/justdrekk-ux/pwnoteca/blob/main/walkthroughs/02-ssh-suid/walkthrough.md',
     ],
 
     'sqli' => [

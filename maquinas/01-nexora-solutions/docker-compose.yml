@@ -1,0 +1,28 @@
+services:
+
+  web-01:
+    build: ./web-01
+    container_name: web-01
+    networks:
+      - external
+      - internal
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./web-01/html:/var/www/html
+
+  server-02:
+    build: ./server-02
+    container_name: server-02
+    networks:
+      - internal
+    volumes:
+      - ./server-02/html:/var/www/html
+
+networks:
+  external:
+    driver: bridge
+
+  internal:
+    driver: bridge
+    internal: true

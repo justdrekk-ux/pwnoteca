@@ -4,7 +4,6 @@ Memoria_TFG_*.docx
 # Pruebas antiguas
 test2.php
 test2.phtml
-web-01/restore_notes.txt
 
 # Archivos comprimidos (se subirán a Releases)
 *.zip
@@ -22,5 +21,5 @@ web-01/restore_notes.txt
 __pycache__/
 
 # Archivos subidos durante los laboratorios
-web-01/html/uploads/*
-!web-01/html/uploads/.gitkeep
+maquinas/01-nexora-solutions/web-01/html/uploads/*
+!maquinas/01-nexora-solutions/web-01/html/uploads/.gitkeep

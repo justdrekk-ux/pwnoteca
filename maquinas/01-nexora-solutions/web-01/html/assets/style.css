@@ -1,0 +1,195 @@
+/* Nexora Solutions - Web corporativa */
+
+:root {
+    --primary: #172b42;
+    --secondary: #243e59;
+    --accent: #55b9a8;
+    --background: #f1f5f9;
+    --text: #29384a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Cabecera */
+
+header {
+    background: linear-gradient(120deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 30px 8%;
+}
+
+header h1 {
+    margin: 0 0 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+/* Navegación */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #dce7f1;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Contenido principal */
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 45px auto;
+    padding: 45px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--secondary);
+    margin-top: 35px;
+}
+
+p {
+    color: #5c6b7c;
+}
+
+a {
+    color: #238c7d;
+}
+
+/* Lista de servicios */
+
+main ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+main li {
+    padding: 25px;
+    background: #f6f9fc;
+    border: 1px solid #e0e8ef;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Formularios */
+
+form {
+    margin-top: 25px;
+    padding: 25px;
+    background: #f6f9fc;
+    border: 1px solid #e0e8ef;
+    border-radius: 8px;
+}
+
+input {
+    max-width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: var(--accent);
+    color: #102b2a;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #70caba;
+}
+
+/* Páginas secundarias */
+
+body > h1,
+body > h2,
+body > p,
+body > form,
+body > a {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > h1 {
+    margin-top: 50px;
+    color: var(--primary);
+}
+
+body > form {
+    background: white;
+}
+
+/* Pie de página */
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background: var(--primary);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #b9c9d8;
+    font-size: 13px;
+}
+
+/* Adaptación a móviles */
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 25px;
+        margin: 25px auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
